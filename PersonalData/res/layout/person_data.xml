@@ -1,115 +1,361 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rlPersonDataMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <LinearLayout
-        android:id="@+id/llPersonDataMain"
+    <ScrollView
+        android:id="@+id/scrollViewMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:padding="10dp" >
+        tools:ignore="UselessParent" >
 
         <LinearLayout
-            android:id="@+id/llNameMain"
+            android:id="@+id/llPersonDataMain"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:orientation="horizontal" >
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp" >
 
-            <TextView
-                android:id="@+id/textViewName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginRight="20dp"
-                android:text="@string/name"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextName"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="@string/name"
-                android:inputType="text"
-                android:textSize="24sp" >
-
-                <requestFocus />
-            </EditText>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/llSexMain"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal" >
-
-            <TextView
-                android:id="@+id/textViewSex"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:text="@string/sex"
-                android:textSize="24sp" />
-
-            <RadioGroup
-                android:id="@+id/radioGroupSex"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+            <LinearLayout
+                android:id="@+id/llNameMain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
                 android:orientation="horizontal" >
 
-    <RadioButton
-        android:id="@+id/radioMale"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text="@string/male"
-        android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/textViewName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/name"
+                    android:textSize="24sp" />
 
-    <RadioButton
-        android:id="@+id/radioFemale"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="20dp"
-        android:text="@string/female"
-        android:textSize="24sp" />
+                <EditText
+                    android:id="@+id/editTextName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/style_edit_text"
+                    android:ems="10"
+                    android:hint="@string/name"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:textSize="24sp" >
 
-</RadioGroup>
-        </LinearLayout>
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/llAgeMain"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="15dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal" >
+            <LinearLayout
+                android:id="@+id/llSexMain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
 
-            <TextView
-                android:id="@+id/textViewAge"
-                android:layout_width="wrap_content"
+                <TextView
+                    android:id="@+id/textViewSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/sex"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/male"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/female"
+                        android:textSize="24sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAgeMain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/age"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/editTextAge"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@drawable/style_edit_text"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:scrollHorizontally="false"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSmokingMain"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewSmoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/smoking"
+                    android:textSize="24sp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSmoking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/radioSmokingYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/yes"
+                        android:textSize="24sp" />
+
+                    <RadioButton
+                        android:id="@+id/radioSmokingNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/no"
+                        android:textSize="24sp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAlcoholMain"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="20dp"
-                android:text="@string/age"
-                android:textSize="24sp" />
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
 
-            <EditText
-                android:id="@+id/editTextAge"
-                android:layout_width="80dp"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:gravity="center"
-                android:inputType="numberDecimal"
-                android:maxLength="3"
-                android:scrollHorizontally="false"
-                android:textSize="24sp" />
+                <TextView
+                    android:id="@+id/textViewAlcohol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alcohol"
+                    android:textSize="24sp" />
 
+                <CheckBox
+                    android:id="@+id/checkBoxAlcohol3week"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alcohol3time"
+                    android:textSize="20sp" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxAlcohol5beer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alcohol3time5beer"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMedicationMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewMedication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/medication"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/editTextMedication"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/style_edit_text"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llAllergyMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewAllergy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/allergy"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/editTextAllergy"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/style_edit_text"
+                    android:ems="10"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="10dp"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llDiseasesMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/textViewDiseases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_diseases"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp" >
+
+                    <TextView
+                        android:id="@+id/textViewPsychiatric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/psychiatric"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxDepression"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/depression"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxMentalDisorders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mental_disorders"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxMentalIllness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/mental_illness"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewNeurology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/neurology"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxStroke"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/stroke"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewCardiology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cardiology"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxArrhythmia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/arrhythmia"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxHeartFailure"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/heart_failure"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxHypertension"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/hypertension"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewPulmonologists"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pulmonologists"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+                    <CheckBox
+                        android:id="@+id/checkBoxChronicObstructivePulmonaryDisease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chronic_obstructive_pulmonary_disease"
+                        android:textSize="24sp" />
+                    <CheckBox
+                        android:id="@+id/checkBoxAsthma"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/asthma"
+                        android:textSize="24sp" />
+                </LinearLayout>
+            </LinearLayout>
         </LinearLayout>
-
-    </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

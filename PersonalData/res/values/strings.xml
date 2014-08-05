@@ -9,5 +9,27 @@
     <string name="male">男</string>
     <string name="female">女</string>
     <string name="age">年齡</string>
+    <string name="smoking">吸菸</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="alcohol">喝酒</string>
+    <string name="alcohol3time">一週三次以上</string>
+    <string name="alcohol3time5beer">每次至少五瓶啤酒</string>
+    <string name="medication">用藥</string>
+    <string name="allergy">過敏</string>
+    <string name="select_diseases">是否有下列症狀</string>
+    <string name="psychiatric">精神科</string>
+    <string name="depression">憂鬱症</string>
+    <string name="mental_disorders">心智障礙</string>
+    <string name="mental_illness">精神疾病</string>
+    <string name="neurology">神經科</string>
+    <string name="stroke">腦中風</string>
+    <string name="cardiology">心臟科</string>
+    <string name="arrhythmia">心律不整</string>
+    <string name="heart_failure">心衰竭</string>
+    <string name="hypertension">高血壓</string>
+    <string name="pulmonologists">胸腔科</string>
+    <string name="chronic_obstructive_pulmonary_disease">慢性阻塞性肺病</string>
+    <string name="asthma">氣喘</string>
 
 </resources>
