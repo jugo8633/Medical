@@ -341,17 +341,100 @@
                         android:text="@string/pulmonologists"
                         android:textColor="@android:color/holo_blue_dark"
                         android:textSize="24sp" />
+
                     <CheckBox
                         android:id="@+id/checkBoxChronicObstructivePulmonaryDisease"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/chronic_obstructive_pulmonary_disease"
                         android:textSize="24sp" />
+
                     <CheckBox
                         android:id="@+id/checkBoxAsthma"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/asthma"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewGastroenterology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gastroenterology"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxAbnormalLiverFunction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/abnormal_liver_function"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxPepticUlcer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/peptic_ulcer"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewEndocrinology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/endocrinology"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxDiabetes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/diabetes"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxThyroidDysfunction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/thyroid_dysfunction"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewNephrology"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/nephrology"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxChronicKidneyDisease"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/chronic_kidney_disease"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxDialysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dialysis"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/textViewOrthopedics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/orthopedics"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="24sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkBoxCompressionFracture"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/compression_fracture"
                         android:textSize="24sp" />
                 </LinearLayout>
             </LinearLayout>
