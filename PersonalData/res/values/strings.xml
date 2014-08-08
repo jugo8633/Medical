@@ -42,5 +42,6 @@
     <string name="dialysis">洗腎</string>
     <string name="orthopedics">骨科</string>
     <string name="compression_fracture">壓迫性骨折</string>
+    <string name="finish">完成</string>
 
 </resources>
